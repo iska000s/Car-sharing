@@ -1,0 +1,557 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+
+:root{
+    --main-family-font: "Nunito Sans"
+}
+
+/**STYLOWANIE STRONY PIERWSZEJ**/
+.header {
+    position: relative;
+    background: transparent url("../IMG/car_background.jpg") 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: calc(100vh - 30px);
+    background-size: cover;
+}
+
+.header::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 0.3;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+/**1. GŁÓWNY PASEK MENU Z LOGO: **/
+
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00000066 0% 0% no-repeat padding-box;
+    border-bottom: 2px solid #FFFFFF33;
+    height: 93px;
+}
+
+.logo{
+    display: flex;
+    font: normal normal bold 35px/47px var(--main-family-font);
+    color: #FFFFFF;
+    z-index: 500;
+}
+span{
+    color: #FF0000;
+    margin-right: 5px;
+}
+.logo img{
+    margin: 5px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+}
+
+
+.header__menu a{
+    position: relative;
+    z-index: 400;
+    text-decoration: none;
+    text-align: center;
+    font: normal normal bold 16px/22px Nunito Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    width: 128px;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+
+.header__menu li{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.header__menu div:nth-child(2){
+    width: 50%;
+    height: 100%;
+}
+
+.menu li a:hover{
+    background: #FFFFFF33 0% 0% no-repeat padding-box;
+}
+
+
+
+/**GŁÓWNA INFORMACJA NA PIERWSZEJ STRONIE**/
+
+.header__mainpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font: normal normal 900 90px/90px var(--main-family-font);
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 6px #00000040;
+    height: 80%;
+    position: relative;
+    z-index: 500;
+    max-width: 1046px;
+
+}
+
+
+.header__mainpage p:nth-child(2){
+    text-align: center;
+    font: bold 16px/22px var(--main-family-font);
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin: 20px;
+}
+.button__mainpage__one{
+    background: red;
+    border-radius: 40px;
+    border: 2px solid red;
+    text-align: center;
+    font: normal normal bold 16px var(--main-family-font);
+    letter-spacing: 0px;
+    color: white;
+    width: 220px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button__mainpage__two{
+    background: white;
+    border-radius: 40px;
+    border: 2px solid white;
+    text-align: center;
+    font: normal normal bold 16px var(--main-family-font);
+    letter-spacing: 0px;
+    color: red;
+    width: 220px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.header__mainpage div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 471px;
+}
+.sign{
+    position: absolute;
+    left: 50%;
+    z-index: 600;
+    transform: translateX(-50%);
+    background: #FF0000;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    /**NIE DZIAŁA WYŚRODKOWANIE**/
+    justify-content: center;
+    margin-top: 10px;
+    opacity: 1;
+}
+
+
+/**STYLOWANIE DRUGIEJ STRONY - BLOG**/
+
+.blog{
+    position: relative;
+    z-index: -2100;
+    background-color: white;
+}
+
+.blog__conatainer{
+    flex-direction: column;
+    display: flex;
+    color: white;
+    max-width: 1088px;
+    padding-top: 91px;
+    padding-bottom: 100px;
+
+}
+
+.title{
+    display: flex;
+    text-align: center;
+    font: normal normal bold 35px/47px var(--main-family-font);
+    letter-spacing: 0px;
+    color: #000000;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.title::before{
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    transform: translateY(-50%);
+    content: " ";
+    flex-direction: row;
+    background: #FF0000 0% 0% no-repeat padding-box;
+    width: 50px;
+    height: 3px;
+    box-shadow: 0px 1px 6px #FF00004D;
+    opacity: 1;
+}
+
+.title::after{
+    position: absolute;
+    top: 50%;
+    right: 105%;
+    transform: translateY(-50%);
+    content: " ";
+    background: #FF0000 0% 0% no-repeat padding-box;
+    width: 50px;
+    height: 3px;
+    box-shadow: 0px 1px 6px #FF00004D;
+    opacity: 1;
+}
+
+.blog__pages{
+    display: flex;
+    height: 100%;
+    margin: 20px;
+}
+.blog__page{
+    height: 100%;
+    margin: 10px;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.blog__pictures{
+    width: 100%;
+}
+
+h3{
+    text-align: left;
+    font: normal normal normal 19px/26px var(--main-family-font);
+    letter-spacing: 0px;
+    color: #6A6A6A;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+.description{
+    text-align: left;
+    font: normal normal 300 14px/19px Open Sans;
+    letter-spacing: 0px;
+    color: #6A6A6A;
+    opacity: 1;
+    margin-top: 15px;
+    margin-left: 0;
+    max-width: 260px;
+}
+
+.buttons__readmore{
+    background: #FF0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 10px 29px 10px 29px;
+    margin-top: 15px;
+    text-decoration: none;
+    align-items: end;
+    display: flex;
+    max-width: 145px;
+    margin-left: 0;
+    cursor: pointer;
+    z-index: 500;
+}
+
+/**STYLOWANIE SERVICE **/
+
+.service{
+    background: #28272C 0% 0% no-repeat padding-box;
+    opacity: 1;;
+}
+.service__conatainer{
+    flex-direction: column;
+    display: flex;
+    color: white;
+    max-width: 1088px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.service__conatainer .title{
+    color: #FFFFFF;
+}
+
+.service__pages{
+    display: flex;
+    height: 100%;
+    margin: 20px;
+}
+
+.service h3{
+    text-align: left;
+    font: normal normal normal 19px/26px Nunito Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.service__page{
+    height: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+.service__pictures{
+    max-width: 70%;
+}
+
+.service__description{
+    font: normal normal normal 14px/19px Open Sans;
+    letter-spacing: 0px;
+    color: #B2B2B2;
+
+}
+
+/**STYLOWANIE KONTAKTU**/
+
+.contact{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;;
+}
+.contact__conatainer{
+    flex-direction: column;
+    display: flex;
+    color: white;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    max-width: 904px;
+}
+
+.contact__conatainer .title{
+    text-align: left;
+    font: normal normal bold 35px/47px var(--main-family-font);
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.contact__img{
+    width: 50%;
+    max-height: 316px;
+}
+
+.contact__box{
+    display: flex;
+}
+
+.form{
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_box{
+    width: 100%;
+    height: 38px;
+    margin-bottom: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    text-align: left;
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: 0px;
+    color: #B2B2B2;
+    opacity: 1;
+    outline: none;
+}
+
+.form_box:hover{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.form_box:focus{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.form textarea{
+    height: 140px;
+}
+
+.agreement__text{
+    text-align: left;
+    font: normal normal 300 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: #B2B2B2;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.form_checkbox{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+textarea{
+    height: 140px;
+    text-align: left;
+    font: normal normal normal 16px/22px var(--main-family-font);
+    letter-spacing: 0px;
+    color: #B2B2B2;
+    opacity: 1;
+}
+
+.button__send {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    width: 142px;
+    height: 40px;
+    font: normal normal bold 14px/19px var(--main-family-font);
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 1;
+    position: relative;
+    left: 68%;
+}
+
+/**STYLOWANIE CHECKBOXA NA NIESTANDARDOWY**/
+
+
+.form_checkbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.form_checkbox{
+    cursor: pointer;
+    display: flex;
+}
+
+.form_checkbox span{
+    height: 22px;
+    max-width: 22px;
+    flex-shrink: 0;
+    flex-basis: 60px;
+    cursor: pointer;
+    margin-right: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.form_checkbox input:checked + span{
+    background: transparent url(../IMG/iconcheck.svg) 50% 50% no-repeat;
+}
+
+/** STYLOWANIE - STOPKA **/
+
+
+.footer{
+    background: #28272C 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    padding-top: 40px;
+    padding-bottom: 39px;
+    max-width: 1088px;
+    font: normal normal bold 14px/19px var(--main-family-font);
+    letter-spacing: 0;
+}
+
+
+.footer__container .logo{
+    font: normal normal bold 25px/34px var(--main-family-font);
+    margin-left: 0;
+}
+
+
+.footer__menu ul{
+    max-height: 120px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 22px;
+    margin-left: 0;
+    padding: 0;
+}
+
+.footer__menu ul li:first-child:hover{
+    color: #FF0000;
+}
+
+.copyright{
+    font: normal normal 300 12px/16px var(--main-family-font);
+    letter-spacing: 0px;
+    color: #D1D1D1;
+    opacity: 1;
+    justify-content: right;
+    align-self: end;
+    margin: 0;
+
+}
+
+.footer__menu{
+    display: flex;
+    margin-left: 0;
+    width: 100%;
+
+}
+
+.footer__menu ul li{
+    text-align: left;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-bottom: 7px;
+}

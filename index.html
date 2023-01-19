@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car sharing</title>
+
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section class="header">
+
+    <div class="header__menu">
+        <div class="logo">
+            <img src="IMG/Icon.svg">
+            <span>CAR </span>SHARING
+        </div>
+        <div>
+            <ul class="menu">
+                <li><a href="#home" style="scroll-behavior: smooth">HOME</a></li>
+                <li><a href="#blog" style="scroll-behavior: smooth">BLOG</a></li>
+                <li><a href="#service" style="scroll-behavior: smooth">SERVICE</a></li>
+                <li><a href="#contact" style="scroll-behavior: smooth">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header__mainpage" id="home">
+        <p>CAR SHARING</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div>
+            <a href="#contact" class="button__mainpage__one">SHARE A CAR</a>
+            <a href="#service" class="button__mainpage__two"> KEY FEATURES</a>
+        </div>
+    </div>
+
+    <div class="sign">
+        <img src="./IMG/Icon%20Arrow%20Down.svg">
+    </div>
+
+</section>
+
+<section class="blog" id="blog">
+    <div class="blog__conatainer">
+
+        <h2 class="title">BLOG</h2>
+
+        <div class="blog__pages">
+
+            <div class="blog__page">
+                <img src="IMG/photo1.png" class="blog__pictures">
+                <h3>LOREM IPSUM SIT DOLOR</h3>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href=" " class="buttons__readmore">READ MORE</a>
+            </div>
+
+            <div class="blog__page">
+                <img src="IMG/photo2.png" class="blog__pictures">
+                <h3>LOREM IPSUM SIT DOLOR</h3>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="buttons__readmore">READ MORE</a>
+            </div>
+
+            <div class="blog__page">
+                <img src="IMG/photo3.png" class="blog__pictures">
+                <h3>LOREM IPSUM SIT DOLOR</h3>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="buttons__readmore">READ MORE</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="service" id="service">
+
+    <div class="service__conatainer">
+
+        <h2 class="title">SERVICE</h2>
+
+        <div class="service__pages">
+            <div class="service__page">
+                <img src="./IMG/mini1.png" class="service__pictures">
+                <h3>LOREM IPSUM SIT DOLOR</h3>
+                <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#service" class="buttons__readmore">READ MORE</a>
+            </div>
+            <div class="service__page">
+                <img src="./IMG/mini2.png" class="service__pictures">
+                <h3>LOREM IPSUM SIT DOLOR</h3>
+                <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#service" class="buttons__readmore">READ MORE</a>
+            </div>
+            <div class="service__page">
+                <img src="./IMG/mini3.png" class="service__pictures">
+                <h3>LOREM IPSUM SIT DOLOR</h3>
+                <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="buttons__readmore">READ MORE</a>
+            </div>
+            <div class="service__page">
+                <img src="./IMG/mini4.png" class="service__pictures">
+                <h3>LOREM IPSUM SIT DOLOR</h3>
+                <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="buttons__readmore">READ MORE</a>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+
+    <div class="contact__conatainer">
+
+        <h2 class="title">CONTACT</h2>
+
+        <div class="contact__box">
+            <img src="IMG/Form%20Photo.png" class="contact__img">
+            <form class="form">
+                <input class="form_box" type="text" name="name" placeholder="Type your name">
+                <input class="form_box" type="email" name="e-mail" placeholder="Type your e-mail">
+                <textarea rows="5" class="form_box" name="message" placeholder="Type your message"></textarea>
+                <label class="form_checkbox">
+                <input type="checkbox" name="agreement">
+                    <span></span>
+                    <p class="agreement__text">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+                </label>
+                <button type="submit" class="button__send">SEND</button>
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="footer" id="footer">
+
+    <div class="footer__container">
+
+    <div class="logo">
+        <img src="../Car-sharing/IMG/Logofooter.svg">
+        <span>CAR</span>SHARING
+    </div>
+
+    <div class="footer__menu">
+        <ul>
+            <li>HOME PAGE</li>
+            <li>ABOUT US</li>
+            <li>GALLERY</li>
+            <li>SHARE REGULATION</li>
+            <li>PRICE</li>
+            <li>OUR FLEET</li>
+            <li>OUR CLIENTS</li>
+            <li>CONTACT</li>
+        </ul>
+        <small class="copyright">Copyright © Coders Lab</small>
+    </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
