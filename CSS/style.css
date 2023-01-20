@@ -282,11 +282,9 @@ h3{
     font: normal normal bold 14px/19px Nunito Sans;
     letter-spacing: 0px;
     color: #FFFFFF;
-    opacity: 1;
     padding: 10px 29px 10px 29px;
     margin-top: 15px;
     text-decoration: none;
-    align-items: end;
     display: flex;
     max-width: 145px;
     margin-left: 0;
@@ -453,6 +451,7 @@ textarea{
     opacity: 1;
     position: relative;
     left: 68%;
+    cursor: pointer;
 }
 
 /**STYLOWANIE CHECKBOXA NA NIESTANDARDOWY**/
@@ -524,7 +523,7 @@ textarea{
     padding: 0;
 }
 
-.footer__menu ul li:first-child:hover{
+.footer__menu ul li:hover{
     color: #FF0000;
 }
 
@@ -551,7 +550,6 @@ textarea{
     font: normal normal bold 14px/19px Nunito Sans;
     letter-spacing: 0px;
     color: #FFFFFF;
-    text-transform: uppercase;
-    opacity: 1;
-    margin-bottom: 7px;
+    margin: 0 141px 7px 0;
+    justify-content: space-between;
 }
